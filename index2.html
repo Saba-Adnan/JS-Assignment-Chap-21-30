@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter no 26-30 </title>
+
+    <style>
+        body {
+            background-color: limegreen;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    
+    <h1> Assigment for chapter no 26-30</h1>
+
+    <h3> Q no 1 : Write a program that takes a positive integer from user &  display the following in your browser.
+        a. number
+        b. round off value of the number
+        c. floor value of the number
+        d. ceil value of the number</h3>
+
+<h3> Q no 2: Write a program that takes a negative floating point
+    number from user & display the following in your browser.
+    a. number
+    b. round off value of the number
+    c. floor value of the number
+    d. ceil value of the number</h3>
+
+<h3> Q no 3: Write a program that displays the absolute value of a number.
+    E.g. absolute value of -4 is 4 & absolute value of 5 is 5</h3>
+
+<h3> Q no 4: Write a program that simulates a dice using random() method of JS Math class. Display the value of dice in your
+    browser.</h3>
+
+<h3> Q no 5: Write a program that simulates a coin toss using random() method of JS Math class. Display the value of coin in your
+    browser</h3>
+
+<h3> Q no 6: Write a program that shows a random number between 1 and 100 in your browser.</h3>
+
+<h3> Q no  7. Write a program that asks the user about his weight. Parse the user input and display his weight in your browser.
+    Possible user inputs can be:
+    a. 50
+    b. 50kgs
+    c. 50.2kgs
+    d. 50.2kilograms</h3>
+
+<h3> Q no 8 : Write a program that stores a random secret number from 1 to 10 in a variable. Ask the user to input a number
+    between 1 and 10. If the user input equals the secret
+    number, congratulate the user.</h3>
+
+
+
+
+
+<script>
+
+//  Q no 1:
+
+// // Prompt the user to enter a positive integer
+// var userInput = parseFloat(prompt("Enter a positive number:"));
+
+// // Check if the input is a valid positive number
+// if (!isNaN(userInput) && userInput > 0) {
+//     // Calculate round, floor, and ceil values
+//     var roundedValue = Math.round(userInput);
+//     var floorValue = Math.floor(userInput);
+//     var ceilValue = Math.ceil(userInput);
+
+//     // Display the results in the browser
+//     document.write("<p>Number: " + userInput + "</p>");
+//     document.write("<p>Rounded Value: " + roundedValue + "</p>");
+//     document.write("<p>Floor Value: " + floorValue + "</p>");
+//     document.write("<p>Ceil Value: " + ceilValue + "</p>");
+// } else {
+//     // Handle invalid input
+//     document.write("<p>Please enter a valid positive number.</p>");
+// }
+
+//  Q no 3 : 
+
+// // Prompt the user to enter a negative floating-point number
+// var userInput = parseFloat(prompt("Enter a negative floating-point number:"));
+
+// // Check if the input is a valid negative number
+// if (!isNaN(userInput) && userInput < 0) {
+//     // Calculate round, floor, and ceil values
+//     var roundedValue = Math.round(userInput);
+//     var floorValue = Math.floor(userInput);
+//     var ceilValue = Math.ceil(userInput);
+
+//     // Display the results in the browser
+//     document.write("<p>Number: " + userInput + "</p>");
+//     document.write("<p>Rounded Value: " + roundedValue + "</p>");
+//     document.write("<p>Floor Value: " + floorValue + "</p>");
+//     document.write("<p>Ceil Value: " + ceilValue + "</p>");
+// } else {
+//     // Handle invalid input
+//     document.write("<p>Please enter a valid negative floating-point number.</p>");
+// }
+
+//  Q no 4:
+
+// // Prompt the user to enter a number
+// var userInput = parseFloat(prompt("Enter a number:"));
+
+// // Check if the input is a valid number
+// if (!isNaN(userInput)) {
+//     // Calculate the absolute value of the number
+//     var absoluteValue = Math.abs(userInput);
+
+//     // Display the result in the browser
+//     document.write("<p>The absolute value of " + userInput + " is " + absoluteValue + ".</p>");
+// } else {
+//     // Handle invalid input
+//     document.write("<p>Please enter a valid number.</p>");
+// }
+
+
+//  Q no 5: 
+
+// // Simulate a dice roll
+// var diceRoll = Math.floor(Math.random() * 6) + 1;
+
+// // Display the result in the browser
+// document.write("<p>The value of the dice roll is: " + diceRoll + "</p>");
+
+
+//  OR we Can write function as well for random dice roll 
+
+// // Function to simulate a dice roll
+// function rollDice() {
+//             // Generate a random number between 1 and 6
+//             return Math.floor(Math.random() * 6) + 1;
+//         }
+
+//         // Get the dice roll value
+//         var diceValue = rollDice();
+
+//         // Display the result in the browser
+//         document.write("<p>The value of the dice roll is: " + diceValue + "</p>");
+
+
+// Q no 6: 
+
+    // // Function to simulate a coin toss
+    // function coinToss() {
+    //         // Generate a random number between 0 and 1
+    //         var toss = Math.random();
+    //         // Determine the result of the coin toss
+    //         return toss < 0.5 ? "Heads" : "Tails";
+    //     }
+
+    //     // Get the coin toss result
+    //     var result = coinToss();
+
+    //     // Generate a random number between 1 and 100
+    //     var randomNumber = Math.floor(Math.random() * 100) + 1;
+
+    //     // Display the results in the browser
+    //     document.write("<p>Coin Toss Result: " + result + "</p>");
+    //     document.write("<p>Random number between 1 and 100 is: " + randomNumber + "</p>");
+
+//  Q no 7:
+
+// // Prompt the user to enter their weight
+// var userInput = prompt("Please enter your weight (e.g., 50, 50kgs, 50.2kgs, 50.2kilograms):");
+
+// // Function to parse and clean the user input
+// function parseWeight(input) {
+//     // Regular expression to match numbers with optional decimal points
+//     var regex = /[\d.]+/;
+//     var match = input.match(regex);
+//     return match ? parseFloat(match[0]) : "Invalid input";
+// }
+
+// // Parse the user input to get the weight
+// var weight = parseWeight(userInput);
+
+// // Display the weight in the browser
+// document.write("<p>The weight of user is: " + weight + " kg</p>");
+
+// // Q no 8: 
+
+// Generate a random secret number between 1 and 10
+var secretNumber = Math.floor(Math.random() * 10) + 1;
+
+// Prompt the user to input a number between 1 and 10
+var userGuess = parseInt(prompt("Guess a number between 1 and 10:"), 10);
+
+// Check if the user's guess is correct
+if (userGuess === secretNumber) {
+    document.write("<p>Congratulations! You guessed the number correctly. The secret number was " + secretNumber + ".</p>");
+} else {
+    document.write("<p>Sorry, that's not correct. The secret number was " + secretNumber + ".</p>");
+}
+
+
+
+
+</script>
+
+
+</body>
+</html>
